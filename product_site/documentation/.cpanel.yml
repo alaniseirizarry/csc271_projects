@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/alaniseirizarry/public_html/csc271_projects
+    - /bin/cp -R * $DEPLOYPATH
