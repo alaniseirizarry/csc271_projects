@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Alanis Irizarry, Sept. 28, 2025 -->
+    <!-- Description: Coach Kelvin Fitness Programs & Pricing - Detailed information about our training programs, pricing packages, and how to get started -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs & Pricing - Coach Kelvin Fitness</title>
+
+</head>
+<body>
+    <!-- Logo Section - Original Logo Placeholder -->
+    <header>
+        <!-- Replace this with your actual logo image -->
+        <img src="coach kelvin.png" alt="Coach Kelvin Fitness Logo - Train Hard Like Haze" width="175" height="100">
+    </header>
+
+        <!-- Main Heading -->
+        <header>
+            <h1>Transform Your Body with Our Personalized Training Programs</h1>
+        </header>
+
+        <hr>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Program Description Paragraph -->
+            <section>
+                <p>
+                    With Coach Kelvin, you’re not just another client... you’re part of a community that values hard work, 
+                    dedication, and results. We don't believe in one-size-fits-all solutions. Our training programs 
+                    are tailored to meet your individual needs and goals. Whether you're a beginner or an experienced athlete, 
+                    we have the right program for you.
+                </p>
+            </section>
+
+            <!-- Training Programs Section with Images -->
+            <section id="programs">
+                <h2>OUR SIGNATURE PROGRAMS</h2>
+                
+                <!-- specialized program 1 -->
+                <h3>BEAST MODE STRENGTH</h3>
+                <img src="powerlifting.png" alt="Coach Kelvin's Beast Mode Strength Program" width="180" height="180">
+                <p>
+                    Intense powerlifting-focused program designed to maximize your strength gains. 
+                    Perfect for serious lifters looking to break personal records and build raw power.
+                </p>
+
+                <!-- specialized program 2 -->
+                <h3>GLUTE BUILDER</h3>
+                <img src="gym aesthetic.jpeg" alt="Athlete performing hip thrusts in Coach Kelvin's glute building program" width="200" height="160">
+                <p>
+                    Targeted muscle-building program focusing on sculpting and strengthening the glutes. 
+                    Ideal for those wanting to enhance their physique and improve athletic performance.
+                </p>
+            </section>
+
+            <hr>
+
+            <!-- Pricing Table -->
+            <section id="pricing">
+                <h2>PROGRAM PRICING & PACKAGES</h2>
+                
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Program Package</th>
+                            <th>Duration</th>
+                            <th>Features Included</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>STARTER PACKAGE</strong></td>
+                            <td>1 Month</td>
+                            <td>Basic workout plan, nutrition guide, email support</td>
+                            <td><strong>$97</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ATHLETE PACKAGE</strong></td>
+                            <td>3 Months</td>
+                            <td>Custom program, meal planning, weekly check-ins, live chat</td>
+                            <td><strong>$247</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>CHAMPION PACKAGE</strong></td>
+                            <td>6 Months</td>
+                            <td>Everything + 1-on-1 training sessions, progress tracking, 24/7 support</td>
+                            <td><strong>$497</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ELITE TRANSFORMATION</strong></td>
+                            <td>12 Months</td>
+                            <td>Complete transformation program, personal coaching, supplement guidance</td>
+                            <td><strong>$897</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            <!-- Program Sign-Up Form -->
+            <section id="signup">
+                <h2>START YOUR TRANSFORMATION TODAY</h2>
+                
+                <form action="#" method="post">
+                    <!-- Personal Information -->
+                    <div>
+                        <label for="fullname">Full Name *</label><br>
+                        <input type="text" id="fullname" name="fullname" required maxlength="100" >
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="email">Email Address *</label><br>
+                        <input type="email" id="email" name="email" >
+                    </div>
+                    <br>
+
+                    <!-- Program Selection -->
+                    <div>
+                        <label for="program">Choose Your Program</label><br>
+                        <select id="program" name="program" required>
+                            <option value="">Select a program...</option>
+                            <option value="starter">Starter Package - $97</option>
+                            <option value="athlete">Athlete Package - $247</option>
+                            <option value="champion">Champion Package - $497</option>
+                            <option value="elite">Elite Transformation - $897</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <!-- Fitness Goals -->
+                    <div>
+                        <p><strong>Primary Fitness Goals (check all that apply):</strong></p>
+                        <input type="checkbox" name="goals" value="strength" id="strength">
+                        <label for="strength">Build Strength</label><br>
+                        
+                        <input type="checkbox" name="goals" value="muscle" id="muscle">
+                        <label for="muscle">Gain Muscle</label><br>
+                        
+                        <input type="checkbox" name="goals" value="weight" id="weight">
+                        <label for="weight">Lose Weight</label><br>
+                        
+                        <input type="checkbox" name="goals" value="endurance" id="endurance">
+                        <label for="endurance">Improve Endurance</label><br>
+                    </div>
+                    <br>
+
+                    <!-- Experience Level -->
+                    <div>
+                        <p><strong>Current Fitness Level:</strong></p>
+                        <input type="radio" name="experience" value="beginner" id="beginner">
+                        <label for="beginner">Beginner</label><br>
+                        
+                        <input type="radio" name="experience" value="intermediate" id="intermediate">
+                        <label for="intermediate">Intermediate</label><br>
+                        
+                        <input type="radio" name="experience" value="advanced" id="advanced">
+                        <label for="advanced">Advanced</label><br>
+                    </div>
+                    <br>
+
+                    <!-- Additional Information -->
+                    <div>
+                        <label for="additional-info">Tell us about your fitness journey and goals:</label><br>
+                        <textarea id="additional-info" name="additional-info" rows="4" cols="50"></textarea>
+                    </div>
+                    <br>
+
+                    <!-- Submit Button -->
+                    <button type="submit">SIGN UP FOR TRANSFORMATION</button>
+                </form>
+            </section>
+
+            <!-- Embedded Training Video -->
+            <section>
+                <h2>SEE COACH KELVIN IN ACTION</h2>
+                
+                <!-- Embedded YouTube video about strength training -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1T2yjoHMwb4" 
+                        title="A Little Dig Into Kelvin's Personality| 3rd Youtube Video" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+                
+                <p>
+                    <em>Watch a little on how Coach Kelvin approaches fitness training with a personal touch.</em>
+                </p>
+            </section>
+        </main>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+        
+            <p>
+                <strong>Ready to Train Hard, Like Haze?</strong><br>
+            </p>
+            
+            <!-- Navigation back to home -->
+            
+                <li><a href="index.html">Return to Home Page</a></li>
+        </footer>
+    </div>
+
+ 
+    <!-- AI assisted with wording for some of the paragraphs to sound more appealing -->
+    <!-- Context for some code and layout comes from previous experience from CSC106, I've played around with building websites as personal projects and refreshers from w3schools -->
+</body>
+</html>
