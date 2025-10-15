@@ -1,0 +1,461 @@
+/* 
+ * Alanis Irizarry, Oct. 13, 2025
+ * Description: Main stylesheet for Coach Kelvin Fitness website with responsive layout
+ */
+
+/* ========== GLOBAL RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== ELEMENT SELECTORS ========== */
+
+/* Body - Background color and base typography */
+body {
+    background-color: #181616;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+/* Main heading - consistent font properties */
+h1 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 3em;
+    color: #9e842f;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Secondary headings */
+h2 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 2em;
+    color: #af9241;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Tertiary headings */
+h3 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 1.4em;
+    color: #d4b653;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* Paragraph styling - consistent across all pages with fallback fonts */
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.15em;
+    color: #c9b884;
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+/* Lists */
+ul, ol {
+    font-size: 1.1em;
+    color: #ccb673;
+    line-height: 1.9;
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    margin: 25px 0;
+    border-collapse: collapse;
+    font-size: 1.05em;
+}
+
+th {
+    background-color: #d4af37;
+    color: #000000;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    background-color: #2a2a2a;
+    color: #c9b884;
+    padding: 12px 15px;
+    border: 1px solid #3a3a3a;
+}
+
+/* Images - Base styling */
+img {
+    max-width: 100%; /* Scale images to fit page but never larger than original */
+    height: auto;
+    border: 3px solid #d4af37;
+    border-radius: 8px;
+}
+
+/* Horizontal rules */
+hr {
+    border: none;
+    border-top: 2px solid #d4af37;
+    margin: 40px 0;
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    background-color: #2a2a2a;
+    color: #c9b884;
+    border: 2px solid #3a3a3a;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    max-width: 500px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #d4af37;
+    outline: none;
+}
+
+label {
+    color: #c9b884;
+    font-weight: 600;
+    font-size: 1.05em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+button[type="submit"] {
+    background-color: #d4af37;
+    color: #1c1c1c;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c9a832;
+}
+
+button[type="submit"]:active {
+    background-color: #b8975f;
+    transform: scale(0.98);
+}
+
+/* ========== HEADER SECTION ========== */
+
+/* Header container with overflow control */
+.header {
+    overflow: auto; /* Clips content and handles floating elements */
+    background-color: #2a2a2a;
+    padding: 20px 40px;
+    border-bottom: 4px solid #d4af37;
+}
+
+/* Logo styling - floats left */
+.header .logo {
+    float: left;
+    color: #d4af37;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.header .logo:hover {
+    color: #c9a832;
+}
+
+/* Navigation container - floats right */
+.header nav {
+    float: right;
+}
+
+/* Navigation links styling */
+.header nav a {
+    float: left;
+    color: #c9b884;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.header nav a:hover {
+    background-color: #3a3a3a;
+    color: #d4af37;
+    border-radius: 5px;
+}
+
+/* Active/current page link styling */
+.header nav a.active {
+    background-color: #d4af37;
+    color: #1c1c1c;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Click effect for navigation links */
+.header nav a:active {
+    background-color: #b8975f;
+    transform: scale(0.95);
+}
+
+/* ========== MAIN CONTENT SECTION ========== */
+
+/* Main content box using CSS box model */
+.content {
+    float: left;
+    width: 85%;
+    max-width: 1200px;
+    background-color: #1c1c1c; /* Solid background for visibility */
+    padding: 40px;
+    margin: 40px auto;
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.1);
+}
+
+/* Wrapper to center the content box */
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Alternative centering method for content */
+.content-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========== IMAGE FLOAT STYLES ========== */
+
+/* Float images left with margin for text wrapping */
+.img-left {
+    float: left;
+    margin: 10px 25px 20px 0; /* Right and bottom margins prevent text from touching */
+    max-width: 400px;
+}
+
+/* Float images right with margin for text wrapping */
+.img-right {
+    float: right;
+    margin: 10px 0 20px 25px; /* Left and bottom margins prevent text from touching */
+    max-width: 400px;
+}
+
+/* Center images */
+.img-center {
+    display: block;
+    margin: 25px auto;
+    max-width: 600px;
+}
+
+/* ========== ID SELECTOR ========== */
+
+/* Programs section styling */
+#programs {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border: 3px solid #d4af37;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+/* ========== CLASS SELECTOR ========== */
+
+/* Highlight class for important text */
+.highlight {
+    background-color: #d4af37;
+    color: #1c1c1c;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* Clearfix utility to clear floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ========== LINK STYLES ========== */
+
+/* Unvisited links */
+a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* Visited links */
+a:visited {
+    color: #b8975f;
+}
+
+/* Hovered links */
+a:hover {
+    color: #c9b884;
+    text-decoration: underline;
+}
+
+/* Active/clicked links */
+a:active {
+    color: #9e842f;
+}
+
+/* ========== FOOTER SECTION ========== */
+
+footer {
+    clear: both; /* Clears any floats above */
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #2a2a2a;
+    border-top: 3px solid #d4af37;
+}
+
+footer p {
+    font-size: 1em;
+    color: #c9b884;
+}
+
+/* ========== RESPONSIVE WEB DESIGN ========== */
+
+/* Media query for screens 600px wide or less */
+@media screen and (max-width: 600px) {
+    
+    /* Header adjustments for mobile */
+    .header {
+        padding: 15px 20px;
+    }
+    
+    /* Logo no longer floats on mobile */
+    .header .logo {
+        float: none;
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 1.8em;
+    }
+    
+    /* Navigation links stack vertically on mobile */
+    .header nav {
+        float: none;
+        width: 100%;
+    }
+    
+    .header nav a {
+        float: none; /* Remove float */
+        display: block; /* Display as block element */
+        text-align: left; /* Align text to left */
+        width: 100%;
+        padding: 15px 20px;
+        border-bottom: 1px solid #3a3a3a;
+    }
+    
+    /* Main content full width on mobile */
+    .content {
+        width: 100%; /* Set width to 100% */
+        padding: 25px;
+        margin: 20px 0;
+        font-size: 1.3em; /* Larger font size for mobile readability */
+        border-radius: 0;
+    }
+    
+    /* Adjust heading sizes for mobile */
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    /* Images no longer float on mobile */
+    .img-left,
+    .img-right {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+    }
+    
+    /* Tables scroll horizontally on small screens */
+    table {
+        display: block;
+        overflow-x: auto;
+        font-size: 0.95em;
+    }
+    
+    /* Form inputs full width on mobile */
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        max-width: 100%;
+    }
+    
+    /* Programs section adjustments */
+    #programs {
+        padding: 20px;
+        margin: 20px 0;
+    }
+}
+
+/* Additional breakpoint for tablets and medium screens */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .content {
+        width: 90%;
+        padding: 35px;
+    }
+    
+    .img-left,
+    .img-right {
+        max-width: 300px;
+    }
+}
+
+/* ========== AI USAGE DOCUMENTATION ========== */
+/* 
+ * AI-assisted: Color palette adjusted to white, gold, and black theme for clean, bold aesthetic
