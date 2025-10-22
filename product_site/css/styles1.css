@@ -203,6 +203,59 @@ a:visited {
 a:hover {
     color: #c9b884;
     text-decoration: underline;
+
+    /* After receiving feedback, fixed needed */
+}
+/* Add padding to body */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Add padding to main content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sections need breathing room */
+section {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Mobile padding */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    main {
+        padding: 15px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+}
+
+/* Good contrast examples */
+.quick-links {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text - GOOD CONTRAST */
+}
+
+.quick-links a {
+    color: #ffffff; /* White links */
+    background-color: #333333; /* Dark gray background */
+    padding: 10px 15px;
+}
+
+.quick-links a:hover {
+    background-color: #ff6b6b; /* Bright color */
+    color: #000000; /* Black text for contrast */
 }
 
 /* AI-assisted: Color palette adjusted to white, gold, and black theme for clean, bold aesthetic */
