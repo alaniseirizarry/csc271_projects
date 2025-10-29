@@ -31,8 +31,14 @@
         gtag('config', 'G-GZ5YKCTPW7');
     </script>
 
+    <script src="js/payment_calculator.js" defer></script>
+
+
 </head>
+
+
 <body>
+
     <!-- Logo Section - Original Logo Placeholder -->
     <header>
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
@@ -136,6 +142,62 @@
 
             <hr>
 
+            <!-- Payment Plan Calculator -->
+<section id="calculator">
+    <h2>CALCULATE YOUR MONTHLY PAYMENT</h2>
+    
+    <p class="calculator-intro">
+        See how affordable your transformation can be! Choose your package and spread payments over time.
+    </p>
+    
+    <div class="calculator-form">
+        <!-- Package Selection -->
+        <label for="package-select">Select Your Package:</label><br>
+        <select id="package-select" required>
+            <option value="">-- Choose a Package --</option>
+            <option value="97">Starter Package - $97</option>
+            <option value="247">Athlete Package - $247</option>
+            <option value="497">Champion Package - $497</option>
+            <option value="897">Elite Transformation - $897</option>
+        </select>
+        <br><br>
+        
+        <!-- Months Selection (now a dropdown like program selector) -->
+        <label for="months-select">Payment Period (months):</label><br>
+        <select id="months-select" required>
+            <option value="">Select payment period...</option>
+            <option value="1">1 month</option>
+            <option value="2">2 months</option>
+            <option value="3">3 months</option>
+            <option value="4">4 months</option>
+            <option value="5">5 months</option>
+            <option value="6">6 months</option>
+            <option value="7">7 months</option>
+            <option value="8">8 months</option>
+            <option value="9">9 months</option>
+            <option value="10">10 months</option>
+            <option value="11">11 months</option>
+            <option value="12">12 months</option>
+        </select>
+        <br><br>
+        
+       
+    </div>
+    
+    <!-- Results Display -->
+    <div id="results" class="results-display">
+        <h3 class="results-heading">Your Payment Plan</h3>
+        <p id="selected-package">Package: <span id="package-name">--</span></p>
+        <p id="total-price">Total Price: <span id="price-amount">--</span></p>
+        <p id="payment-period">Payment Period: <span id="months-display">--</span></p>
+        <p id="monthly-payment"><strong>Monthly Payment: <span id="payment-amount">--</span></strong></p>
+    </div>
+
+</section>
+
+<hr>
+
+
             <!-- Program Sign-Up Form -->
             <section id="signup">
                 <h2>START YOUR TRANSFORMATION TODAY</h2>
@@ -149,10 +211,10 @@
                     <br>
 
                     <div>
+                    <div>
                         <label for="email">Email Address *</label><br>
-                        <input type="email" id="email" name="email" >
+                        <input type="email" id="email" name="email" required>
                     </div>
-                    <br>
 
                     <!-- Program Selection -->
                     <div>
@@ -236,14 +298,15 @@
                 <strong>Ready to Train Hard, Like Haze?</strong><br>
             </p>
             
-            <!-- Navigation back to home -->
-            
-                <li><a href="homepage.html">Return to Home Page</a></li>
-        </footer>
-    </div>
+          
+        <!-- Navigation back to home -->
+        <ul>
+            <li><a href="homepage.html">Return to Home Page</a></li>
+        
+        </ul>
 
- 
-    <!-- AI assisted with wording for some of the paragraphs to sound more appealing -->
+    </footer>
+
     <!-- Context for some code and layout comes from previous experience from CSC106, I've played around with building websites as personal projects and refreshers from w3schools -->
 </body>
 </html>
