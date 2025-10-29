@@ -7,11 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programs & Pricing - Coach Kelvin Fitness</title>
 
+    <meta name="description" content="Transform your body with Coach Kelvin's custom fitness programs. Online personal training, strength coaching, and nutrition guidance starting at $97/month.">
+    <meta name="keywords" content="personal training programs, online fitness coach, strength training program, custom workout plans, fitness coaching packages, affordable personal trainer, nutrition guidance, muscle building program, weight loss coaching, fitness transformation">
+    <meta name="author" content="Alanis Irizarry">
+    <meta name="robots" content="index, follow">
+
+
+    <meta property="og:title" content="Personal Training Programs | Coach Kelvin Fitness">
+    <meta property="og:description" content="Custom fitness programs designed for your transformation goals.">
+    <meta property="og:image" content="https://alaniseirizarry.rhody.dev/csc271_projects/product_site/coachkelvin.png">
+    <meta property="og:url" content="https://alaniseirizarry.rhody.dev/csc271_projects/product_site/homepage.html">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/styles1.css">
+
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZ5YKCTPW7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GZ5YKCTPW7');
+    </script>
+
+    <script src="js/payment_calculator.js" defer></script>
+
+
 </head>
+
+
 <body>
+
     <!-- Logo Section - Original Logo Placeholder -->
     <header>
-        <img src="coach kelvin.png" alt="Coach Kelvin Fitness Logo - Train Hard Like Haze" width="175" height="100">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+        <!-- Logo on Left -->
+        <img src="coach kelvin.png" alt="Coach Kelvin Fitness" width="175" height="100">
+        
+        <!-- Navigation on Right -->
+        <nav>
+            <a href="homepage.html" style="margin: 0 15px; text-decoration: none; font-weight: bold;">Home</a>
+            <a href="programs.html" style="margin: 0 15px; text-decoration: none; font-weight: bold;">Programs</a>
+            <a href="aboutCoach.html" style="margin: 0 15px; text-decoration: none; font-weight: bold;">About</a>
+            <a href="contact.html" style="margin: 0 15px; text-decoration: none; font-weight: bold;">Contact</a>
+        </nav>
+    </div>
     </header>
 
         <!-- Main Heading -->
@@ -26,10 +67,11 @@
             <!-- Program Description Paragraph -->
             <section>
                 <p>
-                    With Coach Kelvin, you’re not just another client... you’re part of a community that values hard work, 
-                    dedication, and results. We don't believe in one-size-fits-all solutions. Our training programs 
-                    are tailored to meet your individual needs and goals. Whether you're a beginner or an experienced athlete, 
-                    we have the right program for you.
+                    With Coach Kelvin's online fitness coaching, you're not just another client... 
+                    Our custom workout plans are tailored to meet your individual fitness goals. 
+                    We have the right personal training program for you. Whether you're looking to build muscle, 
+                    increase strength, or improve overall fitness, our expert and affordable coaching and nutrition guidance   
+                    will help you achieve lasting results.  
                 </p>
             </section>
 
@@ -100,6 +142,62 @@
 
             <hr>
 
+            <!-- Payment Plan Calculator -->
+<section id="calculator">
+    <h2>CALCULATE YOUR MONTHLY PAYMENT</h2>
+    
+    <p class="calculator-intro">
+        See how affordable your transformation can be! Choose your package and spread payments over time.
+    </p>
+    
+    <div class="calculator-form">
+        <!-- Package Selection -->
+        <label for="package-select">Select Your Package:</label><br>
+        <select id="package-select" required>
+            <option value="">-- Choose a Package --</option>
+            <option value="97">Starter Package - $97</option>
+            <option value="247">Athlete Package - $247</option>
+            <option value="497">Champion Package - $497</option>
+            <option value="897">Elite Transformation - $897</option>
+        </select>
+        <br><br>
+        
+        <!-- Months Selection (now a dropdown like program selector) -->
+        <label for="months-select">Payment Period (months):</label><br>
+        <select id="months-select" required>
+            <option value="">Select payment period...</option>
+            <option value="1">1 month</option>
+            <option value="2">2 months</option>
+            <option value="3">3 months</option>
+            <option value="4">4 months</option>
+            <option value="5">5 months</option>
+            <option value="6">6 months</option>
+            <option value="7">7 months</option>
+            <option value="8">8 months</option>
+            <option value="9">9 months</option>
+            <option value="10">10 months</option>
+            <option value="11">11 months</option>
+            <option value="12">12 months</option>
+        </select>
+        <br><br>
+        
+       
+    </div>
+    
+    <!-- Results Display -->
+    <div id="results" class="results-display">
+        <h3 class="results-heading">Your Payment Plan</h3>
+        <p id="selected-package">Package: <span id="package-name">--</span></p>
+        <p id="total-price">Total Price: <span id="price-amount">--</span></p>
+        <p id="payment-period">Payment Period: <span id="months-display">--</span></p>
+        <p id="monthly-payment"><strong>Monthly Payment: <span id="payment-amount">--</span></strong></p>
+    </div>
+
+</section>
+
+<hr>
+
+
             <!-- Program Sign-Up Form -->
             <section id="signup">
                 <h2>START YOUR TRANSFORMATION TODAY</h2>
@@ -113,10 +211,10 @@
                     <br>
 
                     <div>
+                    <div>
                         <label for="email">Email Address *</label><br>
-                        <input type="email" id="email" name="email" >
+                        <input type="email" id="email" name="email" required>
                     </div>
-                    <br>
 
                     <!-- Program Selection -->
                     <div>
@@ -200,14 +298,15 @@
                 <strong>Ready to Train Hard, Like Haze?</strong><br>
             </p>
             
-            <!-- Navigation back to home -->
-            
-                <li><a href="index.html">Return to Home Page</a></li>
-        </footer>
-    </div>
+          
+        <!-- Navigation back to home -->
+        <ul>
+            <li><a href="homepage.html">Return to Home Page</a></li>
+        
+        </ul>
 
- 
-    <!-- AI assisted with wording for some of the paragraphs to sound more appealing -->
+    </footer>
+
     <!-- Context for some code and layout comes from previous experience from CSC106, I've played around with building websites as personal projects and refreshers from w3schools -->
 </body>
 </html>
