@@ -32,6 +32,7 @@
     </script>
 
     <script src="js/payment_calculator.js" defer></script>
+    <script src="js/program_recommender.js" defer></script>
 
 
 </head>
@@ -94,6 +95,9 @@
                     Targeted muscle-building program focusing on sculpting and strengthening the glutes. 
                     Ideal for those wanting to enhance their physique and improve athletic performance.
                 </p>
+                <p>
+                    *When you sign up for any program, please specify if you would like either the "Beast Mode Strength" or "Glute Builder" focus.*
+                </p>
             </section>
 
             <hr>
@@ -141,6 +145,71 @@
             </section>
 
             <hr>
+
+      <section id="program-recommender">
+    <h2>FIND YOUR PERFECT PROGRAM</h2>
+    
+    <p>
+        Answer three quick questions and let us recommend the best program for your transformation goals!
+    </p>
+    
+    <div class="recommender-form">
+        
+        <!-- Decision Node 1: Fitness Goal -->
+        <div class="form-field">
+            <label for="goal-select">
+                1. What is your primary fitness goal? *
+            </label>
+            <select id="goal-select">
+                <option value="">-- Select Your Goal --</option>
+                <option value="Build Strength">Build Strength</option>
+                <option value="Gain Muscle">Gain Muscle</option>
+                <option value="Lose Weight">Lose Weight</option>
+                <option value="Improve Endurance">Improve Endurance</option>
+            </select>
+        </div>
+        
+        <!-- Decision Node 2: Experience Level -->
+        <div class="form-field">
+            <label for="experience-select">
+                2. What is your current fitness level? *
+            </label>
+            <select id="experience-select">
+                <option value="">-- Select Your Experience --</option>
+                <option value="beginner">Beginner (0-1 years training)</option>
+                <option value="intermediate">Intermediate (1-3 years training)</option>
+                <option value="advanced">Advanced (3+ years training)</option>
+            </select>
+        </div>
+        
+        <!-- Decision Node 3: Monthly Budget -->
+        <div class="form-field">
+            <label for="budget-select">
+                3. What is your monthly budget? *
+            </label>
+            <select id="budget-select">
+                <option value="">-- Select Your Budget --</option>
+                <option value="75">Under $100/month</option>
+                <option value="125">$100 - $150/month</option>
+                <option value="200">Over $150/month</option>
+            </select>
+        </div>
+        
+        <!-- Recommendation Button -->
+        <button id="recommend-btn" class="recommend-button">
+            GET MY RECOMMENDATION
+        </button>
+        
+        <!-- Results Display Area -->
+        <div id="recommendation-result">
+            <!-- Recommendation will appear here -->
+        </div>
+    </div>
+    
+
+</section>
+
+<hr>
 
             <!-- Payment Plan Calculator -->
 <section id="calculator">
