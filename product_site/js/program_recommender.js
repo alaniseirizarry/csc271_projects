@@ -1,3 +1,7 @@
+//Alanis Irizarry
+// November 2, 2025
+// Program Recommender - Suggests fitness coaching packages based on user inputs. Uses decision tree logic.
+
 function recommendProgram() {
     // Get user inputs from form
     const goalSelect = document.getElementById('goal-select');
@@ -86,42 +90,12 @@ function displayRecommendation(packageName, price, duration, features, goal) {
             <p><strong>Duration:</strong> ${duration}</p>
             <p><strong>Features Included:</strong></p>
             ${featuresList}
-            <p class="success-message">This program is perfect for your transformation journey!</p>
         </div>
     `;
 }
 
 
-// Function to generate success milestones using WHILE LOOP
-// Using while loop because we're counting down from a specific number until condition is met
-function generateMilestones() {
-    const milestonesDiv = document.getElementById('milestones-display');
-    
-    // Define milestone data
-    const milestoneWeeks = [1, 4, 8, 12];
-    const milestoneDescriptions = [
-        'Week 1: Build foundation & learn proper form',
-        'Week 4: Notice strength improvements',
-        'Week 8: See visible body composition changes',
-        'Week 12: Achieve significant transformation results'
-    ];
-    
-    let milestonesHTML = '<h3>YOUR TRANSFORMATION TIMELINE</h3><ul>';
-    let index = 0;
-    
-    // While loop to add each milestone
-    while (index < milestoneWeeks.length) {
-        milestonesHTML += '<li><strong>Week ' + milestoneWeeks[index] + ':</strong> ' + 
-                          milestoneDescriptions[index].split(': ')[1] + '</li>';
-        index++;
-    }
-    
-    milestonesHTML += '</ul>';
-    milestonesDiv.innerHTML = milestonesHTML;
-}
 
-
-// Function to enhance all pricing table rows with hover effects
 // This loops through a NodeList to apply styling to multiple elements
 function enhancePricingTable() {
     // Select all table rows in the pricing table body
