@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Calculator script loaded!');
     
-    
-    // Use getElementById to select input elements
+     
+    // Use getElementById to select inputelements
     var packageSelect = document.getElementById('package-select');
     var monthsSelect = document.getElementById('months-select');
     
